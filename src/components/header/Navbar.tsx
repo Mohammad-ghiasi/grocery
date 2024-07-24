@@ -52,7 +52,7 @@ export default function MyNavbar() {
                                 <Button size={'md'} textColor='white' background='myGreen.500'>
                                     Login
                                 </Button>
-                                <Box className='me-5'>
+                                <Box className='mx-5'>
                                     <ShoppingChart font={13} mx='0' number={2} top='0' />
                                 </Box>
 
@@ -60,7 +60,9 @@ export default function MyNavbar() {
                         </Box>
                     </Show>
                     <Box className='md:hidden flex  justify-end items-center  w-full'>
-                        <ShoppingChart font={10} mx='2' number={2} top='0' />
+                        <Box className='mx-5'>
+                            <ShoppingChart font={10} mx='2' number={2} top='0' />
+                        </Box>
                         <IconButton
                             icon={<LuLogIn size='28px' />}
                             aria-label='text'
