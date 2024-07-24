@@ -14,7 +14,7 @@ export default function MyNavbar() {
         <header>
             <Box as='nav' className="fixed top-0  w-full shadow-lg bg-white">
 
-                <Box className='flex space-x-20 lg:space-x-32 px-pxsm md:px-pxmd lg:px-pxlg py-pysm md:py-pymd lg:py-pylg'>
+                <Box className='flex space-x-8 lg:space-x-32 px-pxsm md:px-pxmd lg:px-pxlg py-pysm md:py-pymd lg:py-pylg'>
                     <Link href='/'>
                         <Box className='relative w-[130px] h-[50px] md:w-[140px] md:h-[55px] lg:w-[150px] lg:h-[55.5px]'>
                             <Image
@@ -52,24 +52,17 @@ export default function MyNavbar() {
                                 <Button size={'md'} textColor='white' background='myGreen.500'>
                                     Login
                                 </Button>
-                                <ShoppingChart font={13} mx='6' number={2} top='0'  />
-                               
+                                <Box className='me-5'>
+                                    <ShoppingChart font={13} mx='0' number={2} top='0' />
+                                </Box>
+
                             </Box>
                         </Box>
                     </Show>
                     <Box className='md:hidden flex  justify-end items-center  w-full'>
-                        <ShoppingChart font={10} mx='2' number={2} top='0'  />
-                        {/* <Box className='flex items-center relative mx-2'>
-                            <IconButton
-                                icon={<LuShoppingBasket size='28px'  />}
-                                aria-label='text'
-                            />
-                            <Box className='absolute top-0 right-0 bg-red-600 text-white rounded-full px-[5px]'>
-                                <Text className='text-[10px]'>2</Text>
-                            </Box>
-                        </Box> */}
+                        <ShoppingChart font={10} mx='2' number={2} top='0' />
                         <IconButton
-                            icon={<LuLogIn size='28px'  />}
+                            icon={<LuLogIn size='28px' />}
                             aria-label='text'
                         />
                     </Box>
